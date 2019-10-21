@@ -2,13 +2,22 @@
   "name": "tsc-esm",
   "version": "1.0.0",
   "description": "Fixes the file extensions in TypeScript files so they may be loaded as ES modules",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "tsc-esm": "dist/cli.js"
+  },
   "scripts": {
     "test": "mocha"
   },
   "author": "Maurice Prosper",
   "license": "ISC",
   "dependencies": {
+    "glob": "^7.1.5",
+    "util": "^0.12.1"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "^12.11.2",
     "mocha": "^6.2.2",
     "typescript": "^3.6.4"
   }

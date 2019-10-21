@@ -10,7 +10,7 @@
  *  import { func } from "./local/function.js";
  * @param jsContents JavaScript program
  */
-export default function (jsContents: Buffer) {
+export default function (jsContents: Buffer | string) {
     let fixedContents = jsContents.toString('utf-8')
     return fixedContents
 }

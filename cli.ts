@@ -9,12 +9,13 @@ const glob = promisify(globCb)
 const readFile = promisify(readFileCb)
 const writeFile = promisify(writeFileCb)
 
-let files: string[] = []
+const files = new Set<string>()
 
 /** Gets all the files passed into the program */
 async function getFiles() {
     for (const arg of process.argv.slice(2))
-        files = [...files, ...await glob(arg)]
+        for (const filename of await glob(arg))
+            files.add(filename)
 }
 
 /** Runs all the files thru the processor and writes the files */

@@ -1,10 +1,11 @@
 {
     "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "lib": ["esnext"],
         "strict": true,
         "outDir": "dist",
         "declaration": true,
-        "module": "commonjs",
-        "target": "es5",
-        "lib": ["esnext"]
+        "downlevelIteration": true
     }
 }

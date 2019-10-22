@@ -1,6 +1,6 @@
 {
   "name": "tsc-esm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Fixes the file extensions in TypeScript files so they may be loaded as ES modules",
   "main": "dist/index.js",
   "bin": {

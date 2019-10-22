@@ -1,12 +1,14 @@
 {
   "name": "tsc-esm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fixes the file extensions in TypeScript files so they may be loaded as ES modules",
   "main": "dist/index.js",
   "bin": {
     "tsc-esm": "dist/cli.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "mocha -r should -r ts-node/register test.ts",
     "release": "np"

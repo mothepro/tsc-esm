@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "test": "mocha -r should -r ts-node/register test.ts",
+    "prerelease": "tsc",
     "release": "np"
   },
   "author": "Maurice Prosper",

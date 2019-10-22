@@ -36,10 +36,14 @@ Turns into:
 $ npm i -D tsc-esm
 ```
 
-## How to use
+### How to use
 
 After you have compiled your TypeScript run it through this CLI.
 
 ```bash
 $ tsc && tsc-esm index.js dist/*.js
 ```
+
+## TODO
+
++ Do not add extension if it already exists

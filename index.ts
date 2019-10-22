@@ -7,7 +7,7 @@
  * 
  *  Turns into:
  *  import Default from "no-change";
- *  import { func } from "./local/function.js";
+ *  import { func } from './local/function.js';
  * @param jsContents JavaScript program
  */
 // TODO: Use grammar instead, i.e. https://gist.github.com/rbuckton/0d8c1f1c607f52f5ae37#ImportDeclaration

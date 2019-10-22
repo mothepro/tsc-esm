@@ -1,5 +1,6 @@
 # tsc-esm
-> Fixes the file extensions in TypeScript files so they may be loaded as ES modules
+> Fixes the file extensions in TypeScript files so they may be loaded as ES modules.
+> ⚠️ **string literals may be affected by this.**
 
 ES Modules require `import`s to contain the file extension.
 [Currently](https://github.com/microsoft/TypeScript/issues/16577) TypeScript doesn't add the file extensions for you.
